@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CarterOne.ttf">
+            <string>CarterOne</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShapeFormatTool" customModule="Strategy_Creator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="340"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Border_Storke" translatesAutoresizingMaskIntoConstraints="NO" id="ckl-sO-gNT">
+                    <rect key="frame" x="0.0" y="0.0" width="340" height="340"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border Stroke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-wa-ajW" customClass="GenericLabel" customModule="Strategy_Creator" customModuleProvider="target">
+                    <rect key="frame" x="45" y="52" width="164" height="37"/>
+                    <fontDescription key="fontDescription" name="CarterOne" family="Carter One" pointSize="24"/>
+                    <color key="textColor" red="0.32941176470588235" green="0.81568627450980391" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J85-KZ-wsO">
+                    <rect key="frame" x="49" y="96" width="243" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="KHp-Pw-Gm1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enN-mS-Wbv">
+                    <rect key="frame" x="47" y="97" width="31" height="27"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number_bg" translatesAutoresizingMaskIntoConstraints="NO" id="75d-sq-XEL">
+                            <rect key="frame" x="0.0" y="0.0" width="31" height="27"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-9W-YRr">
+                            <rect key="frame" x="0.0" y="5" width="31" height="11"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="75d-sq-XEL" secondAttribute="trailing" id="DR7-hr-XKH"/>
+                        <constraint firstItem="75d-sq-XEL" firstAttribute="top" secondItem="enN-mS-Wbv" secondAttribute="top" id="MxT-GJ-MA4"/>
+                        <constraint firstItem="75d-sq-XEL" firstAttribute="leading" secondItem="enN-mS-Wbv" secondAttribute="leading" id="OGt-W5-J0N"/>
+                        <constraint firstAttribute="height" constant="27" id="Pcn-ej-ugg"/>
+                        <constraint firstAttribute="width" constant="31" id="TBR-I3-tkS"/>
+                        <constraint firstAttribute="bottom" secondItem="GSf-9W-YRr" secondAttribute="bottom" constant="11" id="a3U-dF-QJp"/>
+                        <constraint firstAttribute="bottom" secondItem="75d-sq-XEL" secondAttribute="bottom" id="fzZ-p9-7uK"/>
+                        <constraint firstAttribute="trailing" secondItem="GSf-9W-YRr" secondAttribute="trailing" id="gu9-p7-idv"/>
+                        <constraint firstItem="GSf-9W-YRr" firstAttribute="top" secondItem="enN-mS-Wbv" secondAttribute="top" constant="5" id="jby-GJ-N3F"/>
+                        <constraint firstItem="GSf-9W-YRr" firstAttribute="leading" secondItem="enN-mS-Wbv" secondAttribute="leading" id="wxk-wJ-tjb"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="zGy-hf-oAL" customClass="CustomSlider" customModule="Strategy_Creator" customModuleProvider="target">
+                    <rect key="frame" x="47" y="136" width="247" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="243" id="Npe-TA-jAj"/>
+                        <constraint firstAttribute="height" constant="40" id="vOt-2b-o26"/>
+                    </constraints>
+                    <connections>
+                        <action selector="sliderValueChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="fZc-h9-h0h"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh6-wd-hkx" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                    <rect key="frame" x="45" y="184" width="247" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ghg-9D-zQU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CarterOne" family="Carter One" pointSize="24"/>
+                    <state key="normal" title="Border Color">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejg-e5-EGf">
+                    <rect key="frame" x="34" y="234" width="271" height="1"/>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.93333333333333335" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Obj-GY-Oqv"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1h-j2-bMx" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                    <rect key="frame" x="45" y="245" width="247" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Gi9-WJ-rPt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CarterOne" family="Carter One" pointSize="24"/>
+                    <state key="normal" title="Fill Color">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="J85-KZ-wsO" firstAttribute="centerY" secondItem="zGy-hf-oAL" secondAttribute="centerY" id="0hZ-bJ-50v"/>
+                <constraint firstItem="y1h-j2-bMx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="3Hg-rE-1AZ"/>
+                <constraint firstItem="ckl-sO-gNT" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="4yz-Yx-n1w"/>
+                <constraint firstItem="zGy-hf-oAL" firstAttribute="top" secondItem="enN-mS-Wbv" secondAttribute="bottom" constant="12" id="8A4-c7-0GJ"/>
+                <constraint firstItem="ckl-sO-gNT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8dC-A7-eXx"/>
+                <constraint firstAttribute="bottom" secondItem="y1h-j2-bMx" secondAttribute="bottom" constant="55" id="AN1-rL-7jQ"/>
+                <constraint firstItem="Mh6-wd-hkx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="EGq-cJ-zFV"/>
+                <constraint firstItem="bVt-wa-ajW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="FL6-2r-6tp"/>
+                <constraint firstItem="zGy-hf-oAL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="49" id="J8p-xN-k70"/>
+                <constraint firstAttribute="trailing" secondItem="Ejg-e5-EGf" secondAttribute="trailing" constant="35" id="JHY-3F-M55"/>
+                <constraint firstItem="y1h-j2-bMx" firstAttribute="top" secondItem="Ejg-e5-EGf" secondAttribute="bottom" constant="10" id="L60-cB-dOt"/>
+                <constraint firstItem="ckl-sO-gNT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Llx-6B-BMm"/>
+                <constraint firstAttribute="trailing" secondItem="y1h-j2-bMx" secondAttribute="trailing" constant="48" id="bil-sT-4ab"/>
+                <constraint firstItem="enN-mS-Wbv" firstAttribute="top" secondItem="bVt-wa-ajW" secondAttribute="bottom" constant="8" id="cbp-GV-o8Z"/>
+                <constraint firstItem="J85-KZ-wsO" firstAttribute="trailing" secondItem="zGy-hf-oAL" secondAttribute="trailing" id="cyk-KV-t9P"/>
+                <constraint firstAttribute="trailing" secondItem="Mh6-wd-hkx" secondAttribute="trailing" constant="48" id="doz-eo-9pa"/>
+                <constraint firstItem="ckl-sO-gNT" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="gBV-JE-iQL"/>
+                <constraint firstAttribute="trailing" secondItem="zGy-hf-oAL" secondAttribute="trailing" constant="48" id="hHv-Lt-vMM"/>
+                <constraint firstItem="Ejg-e5-EGf" firstAttribute="top" secondItem="Mh6-wd-hkx" secondAttribute="bottom" constant="10" id="hhv-5l-g2y"/>
+                <constraint firstItem="enN-mS-Wbv" firstAttribute="leading" secondItem="zGy-hf-oAL" secondAttribute="leading" constant="-2" id="jeU-x7-ciM"/>
+                <constraint firstItem="bVt-wa-ajW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="ttL-vM-dEE"/>
+                <constraint firstItem="J85-KZ-wsO" firstAttribute="leading" secondItem="zGy-hf-oAL" secondAttribute="leading" id="xcv-yd-YHf"/>
+                <constraint firstItem="Ejg-e5-EGf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="34" id="xg0-er-Q3I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImageView" destination="ckl-sO-gNT" id="tpN-OV-tPv"/>
+                <outlet property="btnBorderColor" destination="Mh6-wd-hkx" id="fKk-GU-Hr9"/>
+                <outlet property="btnFillColor" destination="y1h-j2-bMx" id="6Mg-OL-9kK"/>
+                <outlet property="layoutConstCenterViewCount" destination="jeU-x7-ciM" id="nEH-Xo-kec"/>
+                <outlet property="lblSliderCount" destination="GSf-9W-YRr" id="MFu-4X-Gm6"/>
+                <outlet property="sliderWidth" destination="zGy-hf-oAL" id="JwQ-eP-4xM"/>
+            </connections>
+            <point key="canvasLocation" x="222" y="47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Border_Storke" width="346" height="344"/>
+        <image name="number_bg" width="51" height="44"/>
+    </resources>
+</document>

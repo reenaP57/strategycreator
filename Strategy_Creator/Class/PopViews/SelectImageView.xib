@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WIv-Oe-074" customClass="SelectImageView" customModule="Strategy_Creator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="277"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEK-Ca-rKF" customClass="GenericView" customModule="Strategy_Creator" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="267"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndm-C2-xTa" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="192" y="8" width="43" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="43" id="ccS-wv-2nf"/>
+                                <constraint firstAttribute="width" secondItem="ndm-C2-xTa" secondAttribute="height" multiplier="1:1" id="s4K-cu-zbv"/>
+                            </constraints>
+                            <state key="normal" image="shap-close_icon"/>
+                            <connections>
+                                <action selector="btnCloseClickedWith_sender:" destination="WIv-Oe-074" eventType="touchUpInside" id="pR5-tn-K8j"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select image from" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REh-dJ-Mec" customClass="GenericLabel" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="8" y="60" width="234" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="yxn-KK-qqf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRS-F2-rIh" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="33" y="117" width="184" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="NRS-F2-rIh" secondAttribute="height" multiplier="268:71" id="dr1-bm-iFP"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-26" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-48" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Gallery" image="Galley">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnGalleryClickedWith_sender:" destination="WIv-Oe-074" eventType="touchUpInside" id="KDP-Z3-C6y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEg-nu-5OF" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="33" y="189" width="184" height="48.5"/>
+                            <inset key="titleEdgeInsets" minX="-26" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Camera" image="Camera">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCameraClickedWith_sender:" destination="WIv-Oe-074" eventType="touchUpInside" id="97B-Ez-8oB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NRS-F2-rIh" firstAttribute="leading" secondItem="AEK-Ca-rKF" secondAttribute="leading" constant="33" id="0J9-eX-dNB"/>
+                        <constraint firstItem="aEg-nu-5OF" firstAttribute="height" secondItem="NRS-F2-rIh" secondAttribute="height" id="5FH-7U-A4g"/>
+                        <constraint firstItem="NRS-F2-rIh" firstAttribute="top" secondItem="REh-dJ-Mec" secondAttribute="bottom" constant="11" id="6Oz-wm-GcG"/>
+                        <constraint firstAttribute="trailing" secondItem="ndm-C2-xTa" secondAttribute="trailing" constant="15" id="6Yi-WJ-ZsZ"/>
+                        <constraint firstItem="REh-dJ-Mec" firstAttribute="centerX" secondItem="AEK-Ca-rKF" secondAttribute="centerX" id="Pdd-Yz-ZpO"/>
+                        <constraint firstItem="aEg-nu-5OF" firstAttribute="top" secondItem="NRS-F2-rIh" secondAttribute="bottom" constant="23" id="ebc-hW-f0s"/>
+                        <constraint firstItem="aEg-nu-5OF" firstAttribute="leading" secondItem="NRS-F2-rIh" secondAttribute="leading" id="fNi-wB-BfB"/>
+                        <constraint firstItem="REh-dJ-Mec" firstAttribute="leading" secondItem="AEK-Ca-rKF" secondAttribute="leading" constant="8" id="h4l-vy-FGt"/>
+                        <constraint firstItem="NRS-F2-rIh" firstAttribute="centerX" secondItem="AEK-Ca-rKF" secondAttribute="centerX" id="hJY-3a-hhg"/>
+                        <constraint firstItem="REh-dJ-Mec" firstAttribute="top" secondItem="AEK-Ca-rKF" secondAttribute="top" constant="60" id="jL8-dv-ttg"/>
+                        <constraint firstItem="ndm-C2-xTa" firstAttribute="top" secondItem="AEK-Ca-rKF" secondAttribute="top" constant="8" id="m9M-G8-zGG"/>
+                        <constraint firstItem="aEg-nu-5OF" firstAttribute="trailing" secondItem="NRS-F2-rIh" secondAttribute="trailing" id="uzI-9W-UZO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AEK-Ca-rKF" firstAttribute="top" secondItem="WIv-Oe-074" secondAttribute="top" id="hik-g4-YAe"/>
+                <constraint firstAttribute="trailing" secondItem="AEK-Ca-rKF" secondAttribute="trailing" constant="10" id="nR3-x0-Mjj"/>
+                <constraint firstAttribute="bottom" secondItem="AEK-Ca-rKF" secondAttribute="bottom" constant="10" id="oza-KD-aL4"/>
+                <constraint firstItem="AEK-Ca-rKF" firstAttribute="leading" secondItem="WIv-Oe-074" secondAttribute="leading" id="phE-JK-jAW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCamera" destination="aEg-nu-5OF" id="7nW-OI-YZ2"/>
+                <outlet property="btnGallery" destination="NRS-F2-rIh" id="hgY-Kv-tnP"/>
+                <outlet property="lblSelectImg" destination="REh-dJ-Mec" id="do3-in-Pii"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Camera" width="45" height="40"/>
+        <image name="Galley" width="55" height="55"/>
+        <image name="shap-close_icon" width="47" height="47"/>
+    </resources>
+</document>

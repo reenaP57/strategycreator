@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SideMenuView" customModule="Strategy_Creator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n12-Lh-M4v" customClass="GenericView" customModule="Strategy_Creator" customModuleProvider="target">
+                    <rect key="frame" x="-125" y="-125" width="500" height="500"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23M-Qr-hle" customClass="GenericView" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="23" y="23" width="454" height="454"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKB-nE-rE2" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                                    <rect key="frame" x="122" y="142" width="61" height="61"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="iKB-nE-rE2" secondAttribute="height" multiplier="1:1" id="FHV-6M-doG"/>
+                                        <constraint firstAttribute="width" constant="61" id="gqk-7J-0FO"/>
+                                    </constraints>
+                                    <state key="normal" image="menu_icon"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7a-QM-8CY" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                                    <rect key="frame" x="340" y="137" width="66" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="MYV-PP-Bfr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <state key="normal" title="Home">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn6-p3-sN8" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                                    <rect key="frame" x="235" y="209" width="181" height="42"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <state key="normal" title="Select Language">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hi1-M0-2f3" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                                    <rect key="frame" x="253" y="301" width="101" height="42"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <state key="normal" title="About Us">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwl-d5-qn4" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                                    <rect key="frame" x="152" y="343" width="122" height="42"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <state key="normal" title="Contact Us">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.77647058820000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="pwl-d5-qn4" secondAttribute="bottom" constant="51" id="0KR-Fn-rqH"/>
+                                <constraint firstAttribute="trailing" secondItem="pwl-d5-qn4" secondAttribute="trailing" constant="180" id="0Sf-hW-cFw"/>
+                                <constraint firstItem="fn6-p3-sN8" firstAttribute="height" secondItem="y7a-QM-8CY" secondAttribute="height" id="7u8-vR-NB2"/>
+                                <constraint firstItem="pwl-d5-qn4" firstAttribute="top" secondItem="Hi1-M0-2f3" secondAttribute="bottom" id="8cI-8q-ie7"/>
+                                <constraint firstAttribute="trailing" secondItem="y7a-QM-8CY" secondAttribute="trailing" constant="48" id="95q-JC-bRZ"/>
+                                <constraint firstItem="pwl-d5-qn4" firstAttribute="height" secondItem="Hi1-M0-2f3" secondAttribute="height" id="BF5-gc-MKp"/>
+                                <constraint firstItem="y7a-QM-8CY" firstAttribute="top" secondItem="23M-Qr-hle" secondAttribute="centerY" constant="-90" id="J6r-dS-Ssg"/>
+                                <constraint firstAttribute="trailing" secondItem="Hi1-M0-2f3" secondAttribute="trailing" constant="100" id="YUP-nf-C7g"/>
+                                <constraint firstItem="fn6-p3-sN8" firstAttribute="top" secondItem="y7a-QM-8CY" secondAttribute="bottom" constant="30" id="bSn-Nr-pgg"/>
+                                <constraint firstAttribute="trailing" secondItem="fn6-p3-sN8" secondAttribute="trailing" constant="38" id="cXl-jK-MXI"/>
+                                <constraint firstItem="Hi1-M0-2f3" firstAttribute="top" secondItem="fn6-p3-sN8" secondAttribute="bottom" constant="50" id="e2Q-dl-SxN"/>
+                                <constraint firstAttribute="bottom" secondItem="pwl-d5-qn4" secondAttribute="bottom" constant="51" id="f4L-kQ-Uue"/>
+                                <constraint firstItem="Hi1-M0-2f3" firstAttribute="height" secondItem="fn6-p3-sN8" secondAttribute="height" id="gCD-ac-CL3"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="0KR-Fn-rqH"/>
+                                    <exclude reference="f4L-kQ-Uue"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.77647058820000003" blue="0.49803921569999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="23M-Qr-hle" firstAttribute="top" secondItem="n12-Lh-M4v" secondAttribute="top" constant="23" id="7U3-48-5Ox"/>
+                        <constraint firstAttribute="trailing" secondItem="23M-Qr-hle" secondAttribute="trailing" constant="23" id="Kt9-NM-TqD"/>
+                        <constraint firstAttribute="bottom" secondItem="23M-Qr-hle" secondAttribute="bottom" constant="23" id="MHR-OZ-N6t"/>
+                        <constraint firstAttribute="width" secondItem="n12-Lh-M4v" secondAttribute="height" multiplier="1:1" id="RRJ-yI-1sy"/>
+                        <constraint firstItem="23M-Qr-hle" firstAttribute="leading" secondItem="n12-Lh-M4v" secondAttribute="leading" constant="23" id="bMA-3z-5kR"/>
+                        <constraint firstAttribute="width" constant="500" id="mdb-Kd-FdA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="n12-Lh-M4v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-125" id="53f-oF-454"/>
+                <constraint firstItem="iKB-nE-rE2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="92m-RK-ewa"/>
+                <constraint firstItem="n12-Lh-M4v" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="a1i-hL-zaK"/>
+                <constraint firstItem="n12-Lh-M4v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-125" id="bZX-qu-yXt"/>
+                <constraint firstItem="iKB-nE-rE2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eDL-hp-jka"/>
+                <constraint firstItem="n12-Lh-M4v" firstAttribute="width" secondItem="n12-Lh-M4v" secondAttribute="height" multiplier="1:1" id="hzS-Yp-Aq9"/>
+                <constraint firstItem="n12-Lh-M4v" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wej-hj-Zlb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnAboutUs" destination="Hi1-M0-2f3" id="7p5-ta-rIm"/>
+                <outlet property="btnClose" destination="iKB-nE-rE2" id="xz5-X2-MFf"/>
+                <outlet property="btnContactUs" destination="pwl-d5-qn4" id="6Bz-Y7-DCl"/>
+                <outlet property="btnHome" destination="y7a-QM-8CY" id="Ve4-ja-XIc"/>
+                <outlet property="btnSelectLanguage" destination="fn6-p3-sN8" id="D41-QF-YyD"/>
+                <outlet property="vwContent" destination="23M-Qr-hle" id="Jwo-do-qBd"/>
+                <outlet property="vwOptions" destination="n12-Lh-M4v" id="buq-7k-Fal"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu_icon" width="47" height="47"/>
+    </resources>
+</document>

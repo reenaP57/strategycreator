@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomePreviewView" customModule="Strategy_Creator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rq8-4N-cyd">
+                    <rect key="frame" x="90" y="90" width="854" height="603"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xur-iN-qns">
+                            <rect key="frame" x="0.0" y="0.0" width="854" height="603"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-P3-PYE" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="25" y="10" width="55" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="fhd-v5-x8P"/>
+                                <constraint firstAttribute="height" constant="55" id="nQ6-tu-kIG"/>
+                            </constraints>
+                            <state key="normal" image="shap-close_icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-VB-tm6" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="697" y="10" width="60" height="60"/>
+                            <state key="normal" image="save"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-bi-I9U" customClass="GenericButton" customModule="Strategy_Creator" customModuleProvider="target">
+                            <rect key="frame" x="772" y="10" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="cg9-c2-mpN"/>
+                                <constraint firstAttribute="height" constant="60" id="xXS-Ya-8Vr"/>
+                            </constraints>
+                            <state key="normal" image="share"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rbc-P3-PYE" firstAttribute="top" secondItem="Rq8-4N-cyd" secondAttribute="top" constant="10" id="1LH-cI-vau"/>
+                        <constraint firstItem="Xur-iN-qns" firstAttribute="leading" secondItem="Rq8-4N-cyd" secondAttribute="leading" id="33o-rY-cUh"/>
+                        <constraint firstItem="eTe-bi-I9U" firstAttribute="leading" secondItem="5Iw-VB-tm6" secondAttribute="trailing" constant="15" id="45c-Ew-6RL"/>
+                        <constraint firstAttribute="trailing" secondItem="eTe-bi-I9U" secondAttribute="trailing" constant="22" id="8rf-2a-6F9"/>
+                        <constraint firstItem="5Iw-VB-tm6" firstAttribute="top" secondItem="Rq8-4N-cyd" secondAttribute="top" constant="10" id="G30-vB-MDP"/>
+                        <constraint firstItem="5Iw-VB-tm6" firstAttribute="width" secondItem="eTe-bi-I9U" secondAttribute="width" id="HQQ-CU-cJM"/>
+                        <constraint firstAttribute="trailing" secondItem="Xur-iN-qns" secondAttribute="trailing" id="Icj-PA-x9k"/>
+                        <constraint firstItem="Xur-iN-qns" firstAttribute="top" secondItem="Rq8-4N-cyd" secondAttribute="top" id="WIS-AB-uYn"/>
+                        <constraint firstItem="rbc-P3-PYE" firstAttribute="leading" secondItem="Rq8-4N-cyd" secondAttribute="leading" constant="25" id="bSh-jx-TxO"/>
+                        <constraint firstAttribute="bottom" secondItem="Xur-iN-qns" secondAttribute="bottom" id="uhH-qs-4eU"/>
+                        <constraint firstItem="5Iw-VB-tm6" firstAttribute="height" secondItem="eTe-bi-I9U" secondAttribute="height" id="wbD-RH-wue"/>
+                        <constraint firstItem="eTe-bi-I9U" firstAttribute="top" secondItem="Rq8-4N-cyd" secondAttribute="top" constant="10" id="zpv-2j-57k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.18823529411764706" blue="0.27450980392156865" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Rq8-4N-cyd" secondAttribute="bottom" constant="75" id="1AK-MJ-Uob"/>
+                <constraint firstItem="Rq8-4N-cyd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="90" id="47i-pu-OFa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Rq8-4N-cyd" secondAttribute="trailing" constant="80" id="Rxg-1X-u5x"/>
+                <constraint firstItem="Rq8-4N-cyd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="70" id="tkZ-bU-lA7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnClose" destination="rbc-P3-PYE" id="nxa-Bq-aKE"/>
+                <outlet property="btnSave" destination="5Iw-VB-tm6" id="ELS-xy-df2"/>
+                <outlet property="btnShare" destination="eTe-bi-I9U" id="OFn-CY-uH5"/>
+                <outlet property="imgVPreview" destination="Xur-iN-qns" id="DgM-la-867"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="save" width="80" height="80"/>
+        <image name="shap-close_icon" width="47" height="47"/>
+        <image name="share" width="80" height="80"/>
+    </resources>
+</document>

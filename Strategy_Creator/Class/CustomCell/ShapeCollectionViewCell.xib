@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShapeCollectionViewCell" customModule="Strategy_Creator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnF-PD-jov" customClass="GenericLabel" customModule="Strategy_Creator" customModuleProvider="target">
+                        <rect key="frame" x="62" y="142" width="42" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="nHP-az-oGt" customClass="GenericImageView" customModule="Strategy_Creator" customModuleProvider="target">
+                        <rect key="frame" x="24" y="16" width="118" height="118"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nHP-az-oGt" secondAttribute="height" multiplier="1:1" id="lii-3u-sBZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nHP-az-oGt" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-8" id="NpQ-j3-yiH"/>
+                <constraint firstItem="nHP-az-oGt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="Tv4-mu-iD6"/>
+                <constraint firstItem="nHP-az-oGt" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="UYv-DG-NI1"/>
+                <constraint firstItem="wnF-PD-jov" firstAttribute="top" secondItem="nHP-az-oGt" secondAttribute="bottom" constant="8" id="ZKG-ZI-cvD"/>
+                <constraint firstAttribute="bottom" secondItem="wnF-PD-jov" secondAttribute="bottom" constant="7" id="aw7-nC-FCs"/>
+                <constraint firstItem="wnF-PD-jov" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="dVh-OH-X47"/>
+                <constraint firstItem="nHP-az-oGt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="hsE-Qe-FND"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="173" height="187"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Tv4-mu-iD6"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imgShape" destination="nHP-az-oGt" id="FnL-nB-uZx"/>
+                <outlet property="lblShapeName" destination="wnF-PD-jov" id="ias-Hd-ccy"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="120"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Oval" width="93" height="48"/>
+    </resources>
+</document>

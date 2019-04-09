@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Strategy_Creator
+
+  Created by Mac-00016 on 19/04/18.
+  Copyright © 2018 Mac-00016. All rights reserved.
+*/
+
+"Strategy Creator" = "مبدع الاستراتيجيات";
+"New File" = "جديد";
+"Shapes" = "الأشكال";
+"Eraser" = "ممحاة";
+"Color Pad" = "الألوان";
+"Pencil" = "قلم";
+"Text" = "نص";
+"Image" = "صورة";
+"Change Bg" = "تغيير الخلفية";
+"Type here" = "أكتب هنا";
+"Select Language" = "اختر اللغة";
+"Home" = "الرئيسية";
+"About Us" = "من نحن";
+"Contact Us" = "اتصل بنا";
+"Square" = "مربع";
+"Rectangle" = "مستطيل";
+"Triangle" = "مثلث";
+"Round" = "دائرة";
+"Line" = "خط";
+"Oval" = "بيضاوي";
+"Select image from" = "اختر صورة";
+"Gallery" = "ألبوم الصور";
+"Camera" = "الكاميرا";
+"Border Stroke" = "نمط الحدود";
+"Border Color" = "ألوان الحدود";
+"Fill Color" = "تعبئة اللون";
+"Save" = "حفظ";
+"Don't Save" = "عدم الحفظ";
+"Cancel" = "اغلاق";
+"Do you want to save your current drawing before creating new file?" = "هل تريد حفظ العمل الحالي قبل البدء في لوحة جديدة؟";
+"Yes" = "نعم";
+"No" = "لا";
+"Are you sure, you want to delete?" = "هل أنت متأكد أنك تريد حذف؟";
+"Saved!" = "!تم الحفظ";
+"Saved successfully" = "حفظ بنجاح";
+"OK" = "حسنا";
+"Please make sure your current drawing is saved before changing language." = "يرجى التأكد من حفظ الرسم الحالي قبل تغيير اللغة.";
